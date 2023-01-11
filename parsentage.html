@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculater</title>
+    <link rel="stylesheet" href="css/styles.css">
+   </head>
+   
+<body>
+<section class="calculater">
+		     
+             <h2> what is<input type="number" id="persent"/> %of  <input type="number" id="num" />?</h2> 
+			 <br><br>
+			 <button onclick="percentage_1()"> Ans: </button>
+			 <input type="text" id="value1" readonly >
+</section>
+  
+  
+  
+  <script type="text/javascript">  
+    function percentage_1(){
+	    var persent = document.getElementById("persent").value;
+	    var num = document.getElementById("num").value;
+	     document.getElementById("value1").value=(num/100)*persent;
+	}
+  
+  
+  </script>
+  
+  
+  
+  
+  
+</body>
+</html>
